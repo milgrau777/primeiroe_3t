@@ -12,11 +12,7 @@ function escreva(){
     document.write(tabuada + " x 8 =  " + (tabuada*8)+"<br>");
     document.write(tabuada + " x 9 =  " + (tabuada*9)+"<br>");
     document.write(tabuada + " x 10 =  " + (tabuada*10)+"<br>");
-
 };
-                                                            
-
-
 function minhatabuada(){
     for(let i=0; i < 10; i++){
         document.write("tabuada do " + 1 + "<br>" );
@@ -29,11 +25,17 @@ function minhatabuada(){
 
       function quadrado(){
           for(let i=1; i <=10; i++){
-              Document.write("o quadrado de"+ i + "é" + (i*i) + "<br>");
-
-
-          }}
-          
-  
- 
+              Document.write("o quadrado de " + i + " é " + (i*i) + "<br>");
+          }
       }
+      }
+function calcula(){
+    let val = document.getElementById("valor").value;
+    let j = document.getElementById("juros").value;
+    let t = document.getElementById("meses").value;
+
+    let res = val * (1+(j/100));
+
+    document.write("resultado: "+res);
+    
+}
