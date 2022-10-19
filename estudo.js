@@ -39,3 +39,17 @@ function calcula(){
     document.write("resultado: "+res);
     
 }
+
+function somaNota(){
+    let n1 = document.getElementById("t1").value;
+    let n2 = document.getElementById("t2").value;
+    let n3 = document.getElementById("t3").value;
+    let r = number(n1) + number(n2) + number(n3);
+    document.getElementById("resultado").innerHTML="soma:" + r;
+}
+function calculaMedia(){
+    let r1 = document.getElementById("t1").value;
+    let r2 = document.getElementById("t2").value;
+    let r3 = document.getElementById("t3").value;
+    let r = number(n1) + number(n2) + number(n3);
+    document.getElementById("resultado").innerHTML="soma:" + r;
