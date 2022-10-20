@@ -34,12 +34,40 @@ function calcula(){
     let j = document.getElementById("juros").value;
     let t = document.getElementById("meses").value;
 
-    let res = val * (1+(j/100));
 
-    document.write("resultado: "+res);
-    
-}
+    if(!number(val)){
+        alert("o valor deve ser um número.");
+        document.getElementById("valor").value = "";
+        document.getElementById("valor").focus();
+        return
 
+    }
+    if(!number(j)){
+        alert("o valor dos juros deve  ser um número.");
+        document.getElementById("juros").value;
+        document.getElementById("juros").focus();
+        return
+
+    }
+    if(!number(t)){
+        alert("A quantidade de meses deve ser um número.");
+        document.getElementById("meses").value;
+        document.getElementById("").focus();
+        return
+
+    }
+    let res = val;
+    for(let m=1; m <= t;m++){
+        res = val * (1+(j/100));
+        val = res;
+        document.write("Mes "+ m + " = "  + res + "<br>");
+    }
+
+
+        document.write("resultado:  "+res);
+    }
+    footer
+       
 function somaNota(){
     let n1 = document.getElementById("t1").value;
     let n2 = document.getElementById("t2").value;
@@ -53,3 +81,5 @@ function calculaMedia(){
     let r3 = document.getElementById("t3").value;
     let r = number(n1) + number(n2) + number(n3);
     document.getElementById("resultado").innerHTML="soma:" + r;
+
+}}
