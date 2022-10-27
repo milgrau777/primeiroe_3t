@@ -1,1 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.calculadora{
+  background: rgba(15, 70, 219, 0.486);
+  width: 190px;
+  color: red;
+  padding: 15px;
+  border-radius: 10px;
 
+
+}
+.calculadora input {
+    background-color: darkslategrey;
+    color: whitesmoke;
+    border-radius: 7px;
+
+
+}
+#pstotal {
+    background-color: black;
+    color: yellow;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+#btncalc {
+    background-color: rgb(171, 199, 10);
+    padding: 10px;
+    margin-top: p0px;
+
+}
+#btncal:hover{
+    background: green;
+    cursor:auto;
+    color: blue;
+}
