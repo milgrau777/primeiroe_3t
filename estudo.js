@@ -60,10 +60,11 @@ function calcula(){
     for(let m=1; m <= t;m++){
         res = val * (1+(j/100));
         val = res;
+        texto += m + " " + moeda(res) + "<br>";
         // document.write("Mes "+ m + " = "  + res + "<br>");
     }
 
-
+        document.getElementById("mes").innerHTML=texto;
         document.getElementById("total").innerHTML= "total: "+moeda(res);
     }
     footer
