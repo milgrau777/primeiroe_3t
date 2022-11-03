@@ -8,6 +8,8 @@ body {
   color: red;
   padding: 15px;
   border-radius: 10px;
+  text-align: center;
+  box-shadow: 10px 10px pink;
 
 
 }
@@ -25,6 +27,7 @@ body {
     margin-bottom: 10px;
     border-radius: 10px;
 }
+
 #btncalc {
     background-color: rgb(171, 199, 10);
     padding: 10px;
@@ -36,3 +39,12 @@ body {
     cursor:auto;
     color: blue;
 }
+.spmes {
+    width: 100%;
+    background:  purple;
+    color:red;
+    border-radius: 10px;
+    border-style:dashed;
+    border-color: rgb(15, 155, 27) ;
+    border-width:blank;
+    margin-top: 4px ;
