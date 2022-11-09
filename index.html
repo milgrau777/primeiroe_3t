@@ -1,38 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>primeiro E</title>
+    <title>PrimeiroE</title>
     <script src="estudo.js"></script>
-
 
     <link rel="stylesheet" href="geral.css">
 
 </head>
+
 <body>
-    <div> class="calculadora">
-         <div id="pstotal">
-             <span id="total">total: 0:00</span><br>
+    <input type="checkbox" id="calcfin">
+
+    <div class="calculadora">
+
+        <label for="calcfin">
+            <h3>Financeira</h3>
+        </label>
+        <div class="calcF">
+            <div id="pstotal">
+                <span id="total">total:0,00</span><br>
             </div>
-    valor: <input id="valor" placeholder="capital" type="text"><br>
-    Juros(mensal):<input id="juros" placeholder=""><br>
-    nr. Meses: <input id="meses" placeholder ="tempo"      text"><br>
-    <button onclick="calcula()">enviar</button>
+            valor: <input id="valor" placeholder="digite o valor" type="text"><br>
+            juros(mensal): <input id="juros" placeholder="% juros" type="text"><br>
+            n° meses: <input id="meses" placeholder="tempo" type="text"><br>
+            <button id="btncal" onclick="calcula()">Calcular</button><br>
+            <div class="spmes">
+                <span id="mes"></span>
+                    
+            </div>
+        </div>
     </div>
- 
 
-    <br><br><br>
-    nota 1: <imput id="t1" type="text"><br>
-    nota 2: <imput id="t2" type="text"><br>
-    nota 3: <imput id="t3" type="text"><br>
-    <button onclick="somaNota()">Somar Notas</button><br>
-
-    <span id="resultado">0</span>
-
- <button onclick="calculaMedia()">SOMAR NOTAS</button><br>
-  
 </body>
+
 </html>
- 
