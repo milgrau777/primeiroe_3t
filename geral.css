@@ -1,57 +1,70 @@
-body{
-    margin: 0;
-    padding: 0;
-    
+body {
+   margin: 0;
+   padding: 0;
 }
-.calculadora{
-    background: rgb(81, 255, 148);
-    width: 190px;
-    color: rgb(255, 0, 0);
-    padding: 15px;  
-    border-radius: 26px;
-    text-align: center;
-    box-shadow: 8px 8px rgb(0, 231, 89);
-}
-.calculadora input{
-    background: darkslategrey;
-    color: whitesmoke;
-    border-radius: 7px;
-}
-.calculadora input:focus{
+.calculadora {
     background: rgb(0, 0, 0);
-    color: rgb(85, 0, 197);
+    width: 200px;
+    color: white;
+    padding: 20px;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 5px 5px pink;
 }
-.calcF{
+.calculadoraESG{
+    background: rgb(137, 226, 178);
+    width: 200px;
+    color: rgb(237, 6, 241);
+    padding: 20px;
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 5px 5px rgb(2, 0, 0);
+ }
+.calculadora input{
+    background:rgba(255, 253, 253, 0.442);
+    border-radius: 10px;
+}
+.calculadoraESG input{
+    background:rgba(255, 253, 253, 0.442);
+    border-radius: 10px; 
+ }
+
+.calcF {
     display: none;
 }
-#calcfin:checked + .calculadora .calcF{
+#calcFin{
+    display: none;
+}
+#calcFin:checked + .calculadora .calcF {
     display: block;
 }
-
-#pstotal{
-  background: rgb(156, 156, 156);
-  color: aqua;
-  padding: 10px;
-  margin-bottom: 5px;
-  border-radius: 10px;
+.calculadora input:focus{
+    background: white;
+    color: black;
 }
-#btncal{
-    background: tomato;
-    padding: 5px;
+#btnCalc{
+    background: white;
     margin-top: 20px;
+    padding: 5px;
 }
-#btncal:hover {
-background: rgb(255, 87, 58);
-cursor:no-drop;
-color: rgb(255, 255, 255);
+#btnCalc:hover{
+    background: rgb(243, 195, 195);
+    color: black;
+    cursor: pointer;
+}
+#psTotal {
+    background: rgb(7, 250, 225);
+    color: black;
+    padding: 10px;
+    margin-bottom: 5px;
 }
 .spmes {
-     width: 100%;
-     background: cadetblue;
-     color: cyan;
-     border-radius: 4px;
-     border-style: dashed;
-     border-color: antiquewhite;
-     border-width: 2px;
-     margin-top: 10px;
-}
+    width: 100%;
+    background: purple;
+    color: white;
+    border-radius: 4px;
+    border-style: dashed;
+    border-color: white;
+    border-width: 2px;
+    margin-top: 10px;
+ }
